@@ -16,4 +16,16 @@
     
     <a href="#" class="a1">111</a> <a href="#" class="a2">222</a>
 </body>
+<script>
+    function person(){
+        return this.name;
+    }
+
+    let someOne = {
+        name : 'Jenny',
+        age : 18
+    }
+
+    console.log(person.call(someOne))
+</script>
 </html>

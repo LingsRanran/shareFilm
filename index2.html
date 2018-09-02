@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = () => {
+            let ran = {
+                name : 'Ranran',
+                age : 22 ,
+                getName : function(){
+                    return this.name;
+                }
+            }
+
+            let dog = {
+                name : 'Wangwang',
+                age : 7
+            }
+
+            console.log(ran.getName.call(dog))
+        }
+    </script>
+</body>
+</html>
